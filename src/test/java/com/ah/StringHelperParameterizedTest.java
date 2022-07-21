@@ -12,7 +12,7 @@ import java.util.Collection;
 /**
  * 1.  Set up annotation at class level
  * 2.  Set up input output params in a collection
- * 3.  Set up constructor to store params locally
+ * 3.  Set up constructor, store params locally
  */
 
 
@@ -36,7 +36,8 @@ public class StringHelperParameterizedTest {
                 {"ACD", "CD"},
                 {"AAXY", "XY"},
                 {"XY", "XY"},
-                {"XYZ", "XYZ"}
+                {"XYZ", "XYZ"},
+                {"AA", ""}
         };
         return Arrays.asList(expectedOutputs);
     }
