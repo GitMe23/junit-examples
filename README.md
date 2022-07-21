@@ -76,3 +76,21 @@ import org.junit.runners.Suite;
 public class SimpleTestSuite {
 }
 ```
+
+## Timeout
+
+Include timeout in the test annotation to fail a test if it doesn't complete within specified milliseconds:
+```java
+    @Test(timeout = 100)
+    public void testSortPerformance() {
+        int[] array = {12, 23, 4};
+        for (int i = 1; i <= 1000000; i++)
+        {
+            array[0] = i;
+            Arrays.sort(array);
+        }
+    }
+```
+
+
+
