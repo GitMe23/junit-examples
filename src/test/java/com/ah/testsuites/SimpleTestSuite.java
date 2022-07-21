@@ -1,5 +1,7 @@
-package com.ah;
+package com.ah.testsuites;
 
+import com.ah.AppTest;
+import com.ah.StringHelperTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
