@@ -11,16 +11,15 @@ Example:
 * Input of "AA" returns ""
 * Input of "BAB" returns "B"
 
-#### Example junit topics
 
-1. **Testing for exceptions**
+## Testing for exceptions
 
 Check that a test passes if an exception is thrown with the annotation:
 ```java
 @Test(expected = NullPointerException.class)
 ```
 
-2. **Parameterized tests**
+## Parameterized tests
 
 Set up parameterized tests in a new class with class level annotation:
 ```java
@@ -63,4 +62,17 @@ Make a single test:
     public void checkTruncateAInFirstTwoLetters() {
         Assertions.assertEquals(expected, stringHelper.truncateAinFirstTwoLetters(input));
     }
+```
+## Test Suites
+
+Create a class to run a select group of test classes
+```java
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({AppTest.class, StringHelperTest.class})
+
+public class SimpleTestSuite {
+}
 ```
