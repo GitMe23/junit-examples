@@ -38,4 +38,5 @@ public class StringHelperTest {
         Arrays.sort(arrayWithNull);
     }
 
+
 }
